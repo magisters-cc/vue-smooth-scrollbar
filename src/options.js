@@ -4,6 +4,6 @@ export default {
   renderByPixels: true,
   alwaysShowTracks: false,
   continuousScrolling: true,
-  wheelEventTarget: null,
+  delegateTo: null,
   plugins: {}
 }
