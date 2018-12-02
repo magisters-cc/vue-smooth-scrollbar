@@ -2,7 +2,7 @@
   "name": "vue-smooth-scrollbar",
   "version": "0.1.0",
   "description": "Smooth scrollbar for Vue.js projects",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
