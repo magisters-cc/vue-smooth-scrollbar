@@ -1,5 +1,5 @@
 # Vue Smooth Scrollbar
-Smooth Scrollbar for Vue.js projects
+Smooth Scrollbar for Vue.js projects. Based on [@idiotwu's smooth-scrollbar](https://idiotwu.github.io/smooth-scrollbar/).
 ## Usage
 ### 1. Install dependency
 
@@ -37,3 +37,13 @@ Vue.use(SmoothScrollbar)
   }
 </style>
 ```
+
+## Backlog
+* [x] Plugin structure
+* [x] Basic implementation
+* [x] Options
+* [ ] Events
+* [x] Methods
+* [ ] Styling
+* [ ] Build dist
+* [ ] SSR / nuxt

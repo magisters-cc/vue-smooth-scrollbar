@@ -1,6 +1,6 @@
 {
   "name": "vue-smooth-scrollbar",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Smooth scrollbar for Vue.js projects",
   "main": "src/index.js",
   "scripts": {
