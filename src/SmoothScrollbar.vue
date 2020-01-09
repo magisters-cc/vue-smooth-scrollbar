@@ -43,7 +43,9 @@
       this.scrollbar = scrollbar
     },
     destroyed() {
-      scrollbar.destroy()
+      if(scrollbar){
+        scrollbar.destroy()
+      }
       scrollbar = null
       this.scrollbar = null
     }
