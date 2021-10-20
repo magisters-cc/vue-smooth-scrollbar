@@ -1,6 +1,6 @@
 {
   "name": "vue-smooth-scrollbar",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Smooth Scrollbar Vue.js single file component",
   "main": "dist/vue-smooth-scrollbar.ssr.js",
   "browser": "dist/vue-smooth-scrollbar.esm.js",
