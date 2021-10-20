@@ -3,7 +3,7 @@ import SmoothScrollbar from 'smooth-scrollbar'
 import defaultOptions from './defaultOptions'
 
 export default /*#__PURE__*/{
-  name: 'VueSmoothScrollbar', // vue component name
+  name: 'SmoothScrollbar', // vue component name
   props: {
     options: {
       type: Object,
@@ -21,6 +21,10 @@ export default /*#__PURE__*/{
       this.$refs.scrollContainer,
       { ...defaultOptions, ...this.options }
     )
+  },
+  destroyed() {
+    this.scrollbar.destroy()
+    this.scrollbar = null
   }
 };
 </script>
