@@ -4192,7 +4192,7 @@ var SmoothScrollbar = /** @class */ (function (_super) {
   delegateTo: null,
   plugins: {}
 };var script = {
-  name: 'VueSmoothScrollbar',
+  name: 'SmoothScrollbar',
   // vue component name
   props: {
     options: {
@@ -4210,6 +4210,10 @@ var SmoothScrollbar = /** @class */ (function (_super) {
   },
   mounted: function mounted() {
     this.scrollbar = SmoothScrollbar.init(this.$refs.scrollContainer, _objectSpread2(_objectSpread2({}, defaultOptions), this.options));
+  },
+  destroyed: function destroyed() {
+    this.scrollbar.destroy();
+    this.scrollbar = null;
   }
 };function normalizeComponent(template, style, script, scopeId, isFunctionalTemplate, moduleIdentifier /* server only */, shadowMode, createInjector, createInjectorSSR, createInjectorShadow) {
     if (typeof shadowMode !== 'boolean') {
@@ -4346,8 +4350,8 @@ var __vue_staticRenderFns__ = [];
 
 var __vue_inject_styles__ = function __vue_inject_styles__(inject) {
   if (!inject) return;
-  inject("data-v-4eae25aa_0", {
-    source: ".vue-smooth-scrollbar[data-v-4eae25aa]{width:100%;height:100%}",
+  inject("data-v-1d1aa579_0", {
+    source: ".vue-smooth-scrollbar[data-v-1d1aa579]{width:100%;height:100%}",
     map: undefined,
     media: undefined
   });
@@ -4355,10 +4359,10 @@ var __vue_inject_styles__ = function __vue_inject_styles__(inject) {
 /* scoped */
 
 
-var __vue_scope_id__ = "data-v-4eae25aa";
+var __vue_scope_id__ = "data-v-1d1aa579";
 /* module identifier */
 
-var __vue_module_identifier__ = "data-v-4eae25aa";
+var __vue_module_identifier__ = "data-v-1d1aa579";
 /* functional template */
 
 var __vue_is_functional_template__ = false;
@@ -4378,7 +4382,7 @@ var component = /*#__PURE__*/(function () {
   var installable = component$1; // Attach install function executed by Vue.use()
 
   installable.install = function (Vue) {
-    Vue.component('VueSmoothScrollbar', installable);
+    Vue.component('SmoothScrollbar', installable);
   };
 
   return installable;

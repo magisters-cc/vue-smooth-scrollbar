@@ -4420,7 +4420,7 @@ var defaultOptions = {
 };
 
 var script = {
-  name: 'VueSmoothScrollbar',
+  name: 'SmoothScrollbar',
   // vue component name
   props: {
     options: {
@@ -4440,6 +4440,11 @@ var script = {
     this.scrollbar = SmoothScrollbar.init(this.$refs.scrollContainer, { ...defaultOptions,
       ...this.options
     });
+  },
+
+  destroyed() {
+    this.scrollbar.destroy();
+    this.scrollbar = null;
   }
 
 };
@@ -4594,8 +4599,8 @@ var __vue_staticRenderFns__ = [];
 
 const __vue_inject_styles__ = function (inject) {
   if (!inject) return;
-  inject("data-v-4eae25aa_0", {
-    source: ".vue-smooth-scrollbar[data-v-4eae25aa]{width:100%;height:100%}",
+  inject("data-v-1d1aa579_0", {
+    source: ".vue-smooth-scrollbar[data-v-1d1aa579]{width:100%;height:100%}",
     map: undefined,
     media: undefined
   });
@@ -4603,7 +4608,7 @@ const __vue_inject_styles__ = function (inject) {
 /* scoped */
 
 
-const __vue_scope_id__ = "data-v-4eae25aa";
+const __vue_scope_id__ = "data-v-1d1aa579";
 /* module identifier */
 
 const __vue_module_identifier__ = undefined;
@@ -4630,7 +4635,7 @@ var entry_esm = /*#__PURE__*/(() => {
   const installable = component; // Attach install function executed by Vue.use()
 
   installable.install = Vue => {
-    Vue.component('VueSmoothScrollbar', installable);
+    Vue.component('SmoothScrollbar', installable);
   };
 
   return installable;

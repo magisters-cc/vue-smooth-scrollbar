@@ -11,7 +11,7 @@ export default /*#__PURE__*/(() => {
 
   // Attach install function executed by Vue.use()
   installable.install = (Vue) => {
-    Vue.component('VueSmoothScrollbar', installable);
+    Vue.component('SmoothScrollbar', installable);
   };
   return installable;
 })();
