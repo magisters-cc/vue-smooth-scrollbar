@@ -10,16 +10,16 @@ npm install --save vue-smooth-scrollbar
 // src/main.js
 import Vue from 'vue'
 ...
-import SmoothScrollbar from 'vue-smooth-scrollbar'
-Vue.use(SmoothScrollbar)
+import VueSmoothScrollbar from 'vue-smooth-scrollbar'
+Vue.use(VueSmoothScrollbar)
 ...
 ```
 ### 3. Use component in your templates
 ```
 <template>
-  <smooth-scrollbar id="scroll-area">
+  <vue-smooth-scrollbar id="scroll-area">
     <div id="example-content"></div>
-  </smooth-scrollbar>
+  </vue-smooth-scrollbar>
 </template>
 
 <style>
